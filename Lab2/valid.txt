@@ -1,0 +1,16 @@
+[imp(p, q), p, or(p, q)].
+q.
+[
+	[1, imp(p,q), premise],
+	[2, or(p, q), premise],
+	[
+		[3, p, assumption],
+		[4, p, copy(3)]
+	],
+	[5, p, premise],
+	[
+		[6, q, assumption],
+		[4, q, copy(6)]
+	],
+	[8, q, orel(2, 3, 4, 6, 4)]
+].
